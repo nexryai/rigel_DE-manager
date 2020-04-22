@@ -6,11 +6,11 @@ if [ $cmd = 'xfce' ]; then
 
 
 elif [ $cmd = 'GNOME' ]; then
-  zenity --progress --pulsate --text "GNOMEは洗練されています。様々なDEのベースにもなっています" & pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY　apt-get install gnome-session
+  zenity --progress --pulsate --text "GNOMEは洗練されています。様々なDEのベースにもなっています" & pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY　apt-get install -y gnome-session
 
 
 elif [ $cmd = 'KDE' ]; then
-  zenity --progress --pulsate --text "KDEって意外と軽いんですよね。サクサク動きます" & pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY　apt install kubuntu-desktop kde-plasma-desktop kde-cong-screenlocker konsole kscreen language-pack-kde-ja
+  zenity --progress --pulsate --text "KDEって意外と軽いんですよね。サクサク動きます" & pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY　apt install -y kubuntu-desktop kde-plasma-desktop kde-cong-screenlocker konsole kscreen language-pack-kde-ja
 
 
 elif [ $cmd = 'deepin' ]; then
